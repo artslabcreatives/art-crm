@@ -140,7 +140,7 @@
                 <div class="adjacent-center">
 
                     <div class="brand-logo">
-                        <img src="{{ asset('vendor/webkul/admin/assets/images/logo.svg') }}" alt="{{ config('app.name') }}"/>
+                        <img src="{{ asset('vendor/webkul/admin/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
                     </div>
 
                     <label>{{ __('Oops!') }}</label>
@@ -158,14 +158,14 @@
                             <li><a href="{{ route('admin.dashboard.index') }}">{{ __('Dashboard') }}</a></li>
                             <li><a href="{{ route('admin.session.create') }}">{{ __('Login') }}</a></li>
                             <li><a href="https://webkul.uvdesk.com">{{ __('Support') }}</a></li>
-                            <li><a href="mailto: support@krayincrm.com">{{ __('Contact Krayin Team') }}</a></li>
+                            <li><a href="mailto: support@artcrmcrm.com">{{ __('Contact Art Team') }}</a></li>
                         </ul>
                     </div>
 
                     <div class="copyright">
                         <span class="separator">. . .</span>
 
-                        <p>© Copyright 2021 <a href="https:krayincrm.com">Krayin</a>, All right reserved.</p>
+                        <p>© Copyright 2021 <a href="https:artcrmcrm.com">Art</a>, All right reserved.</p>
                     </div>
 
                 </div>

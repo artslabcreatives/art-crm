@@ -13,7 +13,7 @@
         color: <?= $webForm->attribute_label_color ?> !important;
     }
 
-    form#krayinWebForm {
+    form#artcrmWebForm {
         background-color:<?= $webForm->form_background_color ?>;
     }
 
@@ -57,7 +57,7 @@
         </section>
         <div class="adjacent-center">
             <div class="title-box">
-            <img src="{{ url('vendor/webkul/admin/assets/images/logo.svg') }}" alt="krayin">
+            <img src="{{ url('vendor/webkul/admin/assets/images/logo.png') }}" alt="artcrm">
                 <h1 class="web-form-title">{{ $webForm->title }}</h1>
                 <p>{{ $webForm->description }}</p>
             </div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
 
-                    <form id="krayinWebForm" method="post">
+                    <form id="artcrmWebForm" method="post">
                         @foreach ($webForm->attributes as $attribute)
                             @php
                                 $parentAttribute = $attribute->attribute;

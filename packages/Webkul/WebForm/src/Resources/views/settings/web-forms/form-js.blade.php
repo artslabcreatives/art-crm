@@ -5,13 +5,13 @@
 
     var content = document.createElement('div');
 
-    var scriptTag = document.currentScript || document.getElementById('krayin_' + webFormId);
+    var scriptTag = document.currentScript || document.getElementById('artcrm_' + webFormId);
 
     scriptTag.parentElement.appendChild(content);
 
     var formHTML = `{!! view('web_form::settings.web-forms.form-js.form', compact('webForm'))->render() !!}`;
 
-    content.innerHTML = '<div id="krayin-content-container-' + webFormId + '" class="krayin-content-container krayin_' + webFormId + '">' + formHTML + '</div>';
+    content.innerHTML = '<div id="artcrm-content-container-' + webFormId + '" class="artcrm-content-container artcrm_' + webFormId + '">' + formHTML + '</div>';
 
     var script = document.createElement('script');
 
@@ -37,9 +37,9 @@
         var data = null;
 
         $('.button-group button').on('click', function() {
-            data = $("#krayinWebForm").serializeArray();
+            data = $("#artcrmWebForm").serializeArray();
 
-            $("#krayinWebForm").validate({
+            $("#artcrmWebForm").validate({
                 submitHandler: function(form) {
 
                     document.querySelector('#loaderDiv').classList.add('loaderDiv');
@@ -60,7 +60,7 @@
 
                             document.querySelector('#imgSpinner').classList.remove('imgSpinner');
 
-                            var validator = $("#krayinWebForm").validate();
+                            var validator = $("#artcrmWebForm").validate();
 
                             if (data.message) {
                                 $('.alert-wrapper .alert p').text(data.message);
@@ -70,7 +70,7 @@
                                 window.location.href = data.redirect;
                             }
 
-                            $("#krayinWebForm").trigger("reset");
+                            $("#artcrmWebForm").trigger("reset");
                         },
 
                         error: function (data) {
@@ -79,7 +79,7 @@
 
                             document.querySelector('#imgSpinner').classList.remove('imgSpinner');
                             
-                            var validator = $("#krayinWebForm").validate();
+                            var validator = $("#artcrmWebForm").validate();
 
                             for (var key in data.responseJSON.errors) {
                                 var inputNames = [];

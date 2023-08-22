@@ -60,7 +60,7 @@
 
 * #840[enhancement] - There is no option if the admin is trying to filter the leads from the web form.
 
-* #830[enhancement] - There should be the logo of krayin CRM in the web form
+* #830[enhancement] - There should be the logo of artcrm CRM in the web form
 
 * #826[enhancement] -  There should be a logo for the webform
 
@@ -665,15 +665,15 @@ fixedpage should be redirected to the organization page if the user is clicking 
 
 * #177 [fixed] - result: When admin/user adding new Person after deleting email input field. then required validation of email should be work
 
-* #178 [fixed] - Getting Error " Class "Webklex\PHPIMAP\IMAP" not found" while integration of Google calender in Krayin
+* #178 [fixed] - Getting Error " Class "Webklex\PHPIMAP\IMAP" not found" while integration of Google calender in Art
 
 * #180 [fixed] - admin/user adding new Lead after deleting email input field inside Contact Person tab. then required validation of email should be work.
 
-* #181 [fixed] - When admin/user run the **php artisan krayin-crm:version** command on root directory to check their Krayin version. then krayin version is there in the place of V
+* #181 [fixed] - When admin/user run the **php artisan artcrm-crm:version** command on root directory to check their Art version. then artcrm version is there in the place of V
 
 * #182 [fixed] - While Adding a new attribute Lookup field should be come only one time
 
-* #184 [fixed] - When Customer running " composer create-project krayin/laravel-crm " and " php artisan krayin-crm:install ". command to install the laravel-crm. Then the project should be setup successfully .
+* #184 [fixed] - When Customer running " composer create-project artcrm/laravel-crm " and " php artisan artcrm-crm:install ". command to install the laravel-crm. Then the project should be setup successfully .
 
 * #186 [fixed] - When we creating person and selecting the value from the Attributes dropdown which is unique then the it should be give warning to user/admin
 
